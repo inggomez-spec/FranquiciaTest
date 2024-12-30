@@ -61,7 +61,7 @@ public class SucursalesController {
 			}
 		}
 		
-		@PutMapping("/cambiarNombreFranquicia")
+		@PutMapping("/cambiarNombreSucursal")
 		public ResponseEntity<Sucursales> cambiarNombreSucursal(@RequestBody int idSucursal, String nuevoNombre) {
 			
 			Sucursales rta = sucursalesService.updateName(idSucursal, nuevoNombre);
